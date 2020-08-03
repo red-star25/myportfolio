@@ -26098,7 +26098,7 @@ if(F.T(a,!1).a.a>=800)p=F.T(a,!1).a.b*0.63
 else p=F.T(a,!1).a.a>520&&F.T(a,!1).a.a<800?F.T(a,!1).a.b*0.35:F.T(a,!1).a.b*0.22
 return M.d7(o,T.fx(H.b([n,new T.b3(o,10,o,o),s,new T.b3(o,15,o,o),r,new T.b3(o,50,o,o),q,new T.b3(o,30,o,o),U.fJ("assets/mix.png",C.kq,p)],t.t),C.a_,C.dR),o,o,o,o,o,o,o)}}
 R.uv.prototype={
-J:function(a){var s=null,r="Hello \ud83d\udc4b, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm a music lover, gamer, and a geeky guy who always wanted to explore new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",q="assets/me.png",p=L.cL("About Me",B.l_(C.j,48),s),o=t.t,n=F.T(a,!1).a.a>800?T.Nm(H.b([M.d7(s,L.cL(r,B.oJ(C.j,18,s),s),s,s,s,s,s,s,450),new T.b3(40,s,s,s),U.fJ(q,C.i5,300)],o),C.a_,C.dR):T.fx(H.b([U.fJ(q,C.i5,300),new T.b3(s,40,s,s),M.d7(s,L.cL(r,B.oJ(C.j,18,s),C.hU),s,s,s,s,s,s,450)],o),C.a_,C.aY)
+J:function(a){var s=null,r="Hello \ud83d\udc4b, I'm Dhruv Nakum,\nMobile and Web Developer from India.\nI build mobile and web applications using Flutter, React.js.\nI have experience in launching and managing Production mobile apps.\nI am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.,",q="assets/me.png",p=L.cL("About Me",B.l_(C.j,48),s),o=t.t,n=F.T(a,!1).a.a>800?T.Nm(H.b([M.d7(s,L.cL(r,B.oJ(C.j,18,s),s),s,s,s,s,s,s,450),new T.b3(40,s,s,s),U.fJ(q,C.i5,300)],o),C.a_,C.dR):T.fx(H.b([U.fJ(q,C.i5,300),new T.b3(s,40,s,s),M.d7(s,L.cL(r,B.oJ(C.j,18,s),C.hU),s,s,s,s,s,s,450)],o),C.a_,C.aY)
 return T.fx(H.b([p,new T.b3(s,40,s,s),n],o),C.a_,C.aY)}}
 R.zH.prototype={
 J:function(a){var s=null
