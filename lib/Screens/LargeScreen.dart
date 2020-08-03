@@ -220,7 +220,7 @@ class AboutMe extends StatelessWidget {
                   Container(
                     width: 450,
                     child: Text(
-                      "Hello 👋, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm a music lover, gamer, and a geeky guy who always wanted to explore new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
+                      "Hello 👋, I'm Dhruv Nakum,\nMobile and Web Developer from India.\nI build mobile and web applications using Flutter, React.js.\nI have an experience in launching and managing Production mobile apps.\nI am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.,",
                       style: GoogleFonts.righteous(
                           color: Colors.white, fontSize: 18),
                     ),
@@ -248,7 +248,7 @@ class AboutMe extends StatelessWidget {
                   Container(
                     width: 450,
                     child: Text(
-                      "Hello 👋, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm a music lover, gamer, and a geeky guy who always wanted to explore new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
+                      "Hello 👋, I'm Dhruv Nakum,\nMobile and Web Developer from India.\nI build mobile and web applications using Flutter, React.js.\nI have experience in launching and managing Production mobile apps.\nI am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.,",
                       style: GoogleFonts.righteous(
                           color: Colors.white, fontSize: 18),
                       textAlign: TextAlign.center,
