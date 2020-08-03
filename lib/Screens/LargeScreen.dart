@@ -21,7 +21,7 @@ class LargeScreen extends StatelessWidget {
                     : (MediaQuery.of(context).size.width > 520 &&
                             MediaQuery.of(context).size.width < 800)
                         ? MediaQuery.of(context).size.height * 1
-                        : MediaQuery.of(context).size.height * 0.76,
+                        : MediaQuery.of(context).size.height * 0.78,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     image: DecorationImage(
@@ -29,9 +29,7 @@ class LargeScreen extends StatelessWidget {
                         fit: BoxFit.cover)),
                 child: Column(
                   children: [
-                    MediaQuery.of(context).size.width > 800
-                        ? Header()
-                        : Container(),
+                    Header(),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.1,
                     ),
@@ -41,33 +39,50 @@ class LargeScreen extends StatelessWidget {
               ),
             ]),
             Container(
-              height: MediaQuery.of(context).size.width > 800
-                  ? MediaQuery.of(context).size.height * 4
-                  : MediaQuery.of(context).size.height * 4.2,
+              height: MediaQuery.of(context).size.width >= 800
+                  ? MediaQuery.of(context).size.height * 4.1
+                  : (MediaQuery.of(context).size.width > 520 &&
+                          MediaQuery.of(context).size.width < 800)
+                      ? MediaQuery.of(context).size.height * 3.1
+                      : MediaQuery.of(context).size.height * 3.1,
               width: MediaQuery.of(context).size.width,
               child: Column(
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
                   ),
                   AboutMe(),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
                   ),
                   Skill(),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
                   ),
                   WebProject(),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
                   ),
                   AppProject(),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
                   ),
                   Contact(),
-                  Spacer(),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.width > 800
+                        ? MediaQuery.of(context).size.height * 0.2
+                        : MediaQuery.of(context).size.height * 0.1,
+                  ),
                   Center(
                     child: Text(
                       "© All right reserved 2020",
@@ -173,6 +188,12 @@ class InfoPart extends StatelessWidget {
           Image.asset(
             "assets/mix.png",
             fit: BoxFit.contain,
+            height: MediaQuery.of(context).size.width >= 800
+                ? MediaQuery.of(context).size.height * 0.63
+                : (MediaQuery.of(context).size.width > 520 &&
+                        MediaQuery.of(context).size.width < 800)
+                    ? MediaQuery.of(context).size.height * 0.35
+                    : MediaQuery.of(context).size.height * 0.22,
           )
         ],
       ),
@@ -199,7 +220,7 @@ class AboutMe extends StatelessWidget {
                   Container(
                     width: 450,
                     child: Text(
-                      "Hello 👋, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm also a music lover, gamer, and a geeky guy who always want to do get hands dirty in new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
+                      "Hello 👋, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm a music lover, gamer, and a geeky guy who always wanted to explore new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
                       style: GoogleFonts.righteous(
                           color: Colors.white, fontSize: 18),
                     ),
@@ -227,9 +248,10 @@ class AboutMe extends StatelessWidget {
                   Container(
                     width: 450,
                     child: Text(
-                      "Hello 👋, I'm Dhruv Nakum, a Mobile and Web Developer.I used to make amazing applications using Flutter and React.I'm also a music lover, gamer, and a geeky guy who always want to do get hands dirty in new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
+                      "Hello 👋, I'm Dhruv Nakum,I used to make amazing Web and Mobile applications using Flutter and React.I'm a music lover, gamer, and a geeky guy who always wanted to explore new technologies.I have experience in launching and managing Production mobile apps.I am also proficient in programming skills including Object-Oriented Programming, Data Structures etc.",
                       style: GoogleFonts.righteous(
                           color: Colors.white, fontSize: 18),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],
@@ -290,7 +312,9 @@ class WebProject extends StatelessWidget {
           items: url,
           options: CarouselOptions(
               enlargeCenterPage: true,
-              height: MediaQuery.of(context).size.height * 0.7,
+              height: MediaQuery.of(context).size.width > 800
+                  ? MediaQuery.of(context).size.height * 0.7
+                  : MediaQuery.of(context).size.height * 0.3,
               autoPlay: true),
         )
       ],
@@ -322,7 +346,9 @@ class AppProject extends StatelessWidget {
             return Image.asset("$i");
           }).toList(),
           options: CarouselOptions(
-              height: 500, autoPlay: true, enlargeCenterPage: true),
+              height: MediaQuery.of(context).size.width > 800 ? 500 : 300,
+              autoPlay: true,
+              enlargeCenterPage: true),
         )
       ],
     );
