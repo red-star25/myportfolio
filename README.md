@@ -1,16 +1,17 @@
-# dhruvnakum
+# My Portfolio Website made with ❤ Flutter
 
-A new Flutter project.
 
-## Getting Started
+<img src="https://i.ibb.co/JdYjm9s/11.png" alt="portfolio">
+<img src="https://i.ibb.co/86zv8Ws/22.png" alt="portfolio">
+<img src="https://i.ibb.co/LCmk56t/33.png" alt="portfolio">
+<img src="https://i.ibb.co/ZdwdqBD/44.png" alt="portfolio">
+<img src="https://i.ibb.co/KGg3gzv/55.png" alt="portfolio">
+<img src="https://i.ibb.co/crGZNzL/66.png" alt="portfolio">
 
-This project is a starting point for a Flutter application.
+❤ Found this project useful?
+If you found this project useful, then please consider giving it a ⭐ on Github and sharing it with your friends via social media.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### LinkedIn Profile
+<p>
+<a href="https://www.linkedin.com/in/dhruv-nakum-4b1054176/"><img src="https://img.icons8.com/ios-filled/2x/linkedin.png" alt="LinkedIn"></a>
+</p>
